@@ -7,22 +7,25 @@
 </head>
 <body>
 	<div class="container">
-		<div>
+		<div class="container signin">
 			<h1>
 				Поиск нужного авто в базе
 			</h1>
-			<p>
-				<a href="registration.html">
-					Регистрация
+			<div id="signIn">
+				<p>
+					<a href="registration.html">
+						Регистрация
+					</a>
+				</p>
+				<p>
+					есть аккаунт? <a href="login.html">
+					Войти
 				</a>
-			</p>
-			<p>
-				есть аккаунт? <a href="login.html">
-				Войти
-			</a>
-			</p>
+				</p>
+			</div>
 		</div>
-		<div>
+		<div class="clearfix"></div>
+		<div class="searchContainer">
 			<form action="https://fom.in.ua/echo" method="get">
 				<div>
 					<label for="cab">Выберите кузов:</label>
@@ -129,8 +132,6 @@
 						<label >
 							<input type="text"  name="color" placeholder="Ведите цвет">
 						</label>
-					</div>
-				<div>
 					<p>
 						Дополнительно:
 					</p>
@@ -151,6 +152,7 @@
 						Не подлежит восстановлению
 					</label>
 				</div>
+				<hr>
 				<div>
 					<label>
 						<button type="submit" class="btn">Поиск</button>
