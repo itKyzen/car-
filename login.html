@@ -5,6 +5,28 @@
 	<title>Login</title>
 </head>
 <body>
-
+<div>
+	<form action="https://fom.in.ua/echo" method="get">
+		<div class="container">
+			<h1>Вход</h1>
+			<p>Для входа введите имейл и пароль</p>
+			<hr>
+			<label>
+				<b>Имейл</b>
+				<input type="text" placeholder="Введите имейл" name="email" required/>
+			</label>
+			<label>
+				<b>Пароль</b>
+				<input type="password" placeholder="Введите пароль" name="psw" required>
+			</label>
+			<hr>
+			<p>Если вы хотите продолжить без входа нажмите<a href="./searchAuto.html"> здесь</a>.</p>
+			<button type="submit" class="registerbtn">Вход</button>
+		</div>
+		<div class="container signin">
+			<p>Нет аккаунта? <a href="./registration.html">Регистрация</a>.</p>
+		</div>
+	</form>
+</div>
 </body>
 </html>
