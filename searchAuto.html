@@ -45,6 +45,89 @@
 						<option value="Ukraine">Украина</option>
 						<option value="Japan">Япония</option>
 					</select>
+					<br>
+					<div>
+						<p>
+							Цена
+						</p>
+						<label>
+							от <input name="minPrice" type="text" >
+							до <input name="maxPrice" type="text">
+						</label>
+					</div>
+					<br>
+					<div>
+						<p>
+							Год
+						</p>
+						<label>
+							от <input type="date" name="minYear">
+							до <input type="date" name="maxYear">
+						</label>
+					</div>
+					<div>
+						<p>
+							Состояние
+						</p>
+						<label>
+							<input type="checkbox" name="condition" value="crash">
+							Битая
+						</label>
+						<label>
+							<input type="checkbox" name="condition" value="inCredit">
+							В кредит
+						</label>
+						<label>
+							<input type="checkbox" name="condition" value="inUsed">
+							Б/У
+						</label>
+						<label>
+							<input type="checkbox" name="condition" value="clearance">
+							Разтоможеная
+						</label>
+					</div>
+					<div>
+						<p>
+							Тип топлива
+						</p>
+						<label>
+							<input type="radio" name="fuel" value="gasoline">
+							Бензин
+						</label>
+						<label>
+							<input type="radio" name="fuel" value="diesel">
+							Дизель
+						</label>
+						<label>
+							<input type="radio" name="fuel" value="gib-rid">
+							Гибрид
+						</label>
+					</div>
+					<div>
+						<p>
+							Тип коробки передач
+						</p>
+						<label>
+							<input type="radio" name="transmission" value="mechanic">
+							Ручная
+						</label>
+						<label>
+							<input type="radio" name="transmission" value="auto">
+							Автомат
+						</label>
+						<label>
+							<input type="radio" name="transmission" value="robot">
+							Робот/Вариатор
+						</label>
+					</div>
+					<div>
+						<p>
+							Выберите цвет
+						</p>
+						<label >
+							<input type="text"  name="color" placeholder="Ведите цвет">
+						</label>
+					</div>
 				</div>
 			</form>
 		</div>
