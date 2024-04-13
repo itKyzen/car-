@@ -8,14 +8,14 @@ body {
 }
 
 .container {
-    padding: 16px;
+    padding: 1%;
     background-color: white;
 }
 
 input[type=text], input[type=password] {
     width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
+    padding: 1%;
+    margin: 1% 0 1% 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;
@@ -28,32 +28,34 @@ input[type=text]:focus, input[type=password]:focus {
 
 hr {
     border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
+    margin-bottom: 1%;
 }
 
 .btn {
     background-color: #4CAF50;
     color: white;
     padding: 16px 20px;
-    margin: 8px 10px;
+    margin: 2% 5%;
     border: none;
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
 }
-
 .btn:hover {
     opacity: 1;
 }
 
 a {
     text-decoration: none;
-    color: dodgerblue;
+    color: #4d9daf;
 }
 
 .signin {
     background-color: #f1f1f1;
+    background-image: url("../AUTO-SALESDOTCOM.svg");
     text-align: center;
+    height: 100px;
+    color: white;
 }
 
 #signIn {
@@ -61,8 +63,19 @@ a {
 }
 
 .searchContainer {
-    max-width: max-content;
+    display: flex;
+    max-width: 86%;
     margin: 0 auto;
+}
+
+.searchContainer>form {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+.searchBlock {
+    padding-right: 10px;
 }
 
 .clearfix {

@@ -9,9 +9,6 @@
 	<div class="container">
 		<div class="container signin">
 			<div>
-				<h1>
-					Поиск нужного авто в базе
-				</h1>
 				<div id="signIn">
 					<p>
 						<a href="registration.html">
@@ -30,70 +27,91 @@
 		<div class="searchContainer">
 			<form action="https://fom.in.ua/echo" method="get">
 				<div>
-					<label for="cab">Выберите кузов:</label>
-					<select name="cab" id="cab">
-						<option disabled>Выберите кузов</option>
-						<option value="Пикап">Пикап</option>
-						<option value="Седан">Седан</option>
-						<option value="Джип">Джип</option>
-					</select>
-					<label for="mark">Выберите марку:</label>
-					<select name="mark" id="mark">
-						<option disabled>Выберите марку</option>
-						<option value="BMW">BMW</option>
-						<option value="Jeep">Jeep</option>
-						<option value="Honda">Honda</option>
-					</select>
-					<label for="country">Выберите страну:</label>
-					<select name="country" id="country">
-						<option disabled>Выберите страну</option>
-						<option value="Germany">Германия</option>
-						<option value="Ukraine">Украина</option>
-						<option value="Japan">Япония</option>
-					</select>
+					<div class="searchBlock">
+						<label for="cab">Выберите кузов:</label>
+						<select name="cab" id="cab">
+							<option disabled>Выберите кузов</option>
+							<option value="Пикап">Пикап</option>
+							<option value="Седан">Седан</option>
+							<option value="Джип">Джип</option>
+						</select>
+					</div>
+					<div class="searchBlock">
+						<label for="mark">Выберите марку:</label>
+						<select name="mark" id="mark">
+							<option disabled>Выберите марку</option>
+							<option value="BMW">BMW</option>
+							<option value="Jeep">Jeep</option>
+							<option value="Honda">Honda</option>
+						</select>
+					</div>
+					<div class="searchBlock">
+						<label for="country">Выберите страну:</label>
+						<select name="country" id="country">
+							<option disabled>Выберите страну</option>
+							<option value="Germany">Германия</option>
+							<option value="Ukraine">Украина</option>
+							<option value="Japan">Япония</option>
+						</select>
+					</div>
 				</div>
 				<br>
-					<div>
+					<div class="searchBlock">
 						<p>
 							Цена
 						</p>
 						<label>
 							от <input name="minPrice" type="text" >
+						</label>
+						<label>
 							до <input name="maxPrice" type="text">
 						</label>
 					</div>
 					<br>
-					<div>
-						<p>
-							Год
-						</p>
-						<label>
-							от <input type="date" name="minYear">
-							до <input type="date" name="maxYear">
-						</label>
+					<div class="searchBlock">
+						<div>
+							<p>
+								Год
+							</p>
+						</div>
+						<div class="searchBlock">
+							<label>
+								от <input type="date" name="minYear">
+							</label>
+							<br>
+							<label>
+								до <input type="date" name="maxYear">
+							</label>
+						</div>
 					</div>
-					<div>
-						<p>
-							Состояние
-						</p>
+					<div class="searchBlock">
+						<div>
+							<p>
+								Состояние
+							</p>
+						</div>
 						<label>
 							<input type="checkbox" name="condition" value="crash">
 							Битая
 						</label>
+						<br>
 						<label>
 							<input type="checkbox" name="condition" value="inCredit">
 							В кредит
 						</label>
+						<br>
 						<label>
 							<input type="checkbox" name="condition" value="inUsed">
 							Б/У
 						</label>
+						<br>
 						<label>
 							<input type="checkbox" name="condition" value="clearance">
-							Разтоможеная
+							Новая
 						</label>
+						<br>
 					</div>
-					<div>
+					<div class="searchBlock">
 						<p>
 							Тип топлива
 						</p>
@@ -110,7 +128,7 @@
 							Гибрид
 						</label>
 					</div>
-					<div>
+					<div class="searchBlock">
 						<p>
 							Тип коробки передач
 						</p>
@@ -127,7 +145,7 @@
 							Робот/Вариатор
 						</label>
 					</div>
-					<div>
+					<div class="searchBlock">
 						<p>
 							Выберите цвет
 						</p>
@@ -155,7 +173,7 @@
 					</label>
 				</div>
 				<hr>
-				<div>
+				<div class="searchBlock">
 					<label>
 						<button type="submit" class="btn">Поиск</button>
 					</label>
